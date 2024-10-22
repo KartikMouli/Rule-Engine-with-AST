@@ -1,0 +1,36 @@
+# Node modules
+node_modules
+npm-debug.log
+package-lock.json
+
+# Python-related files
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.pyo
+*.pyd
+*.egg-info/
+*.egg
+
+# Environment variable files
+.env
+*.env
+
+# Vite build output
+dist/
+build/
+
+# Dockerfile and docker-compose files (optional, remove if you need them)
+Dockerfile
+docker-compose.yml
+
+# Git and other version control files
+.git
+.gitignore
+
+# Other files to exclude
+*.log
+*.tmp
+*.swp
+.DS_Store
+Thumbs.db

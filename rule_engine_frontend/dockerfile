@@ -1,0 +1,22 @@
+# Use the appropriate Node.js base image
+FROM node:20
+
+# Set the working directory inside the container
+WORKDIR /app
+
+# Ensure no old cache is used
+COPY package.json package-lock.json ./
+# Install dependencies
+RUN npm install 
+
+# Copy the rest of the application code to the container
+COPY . .
+
+# Build the app
+RUN npm run build
+
+# Expose the port
+EXPOSE 5173
+
+# Start the app
+CMD ["npm", "run", "dev"]
